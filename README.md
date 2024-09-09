@@ -79,7 +79,7 @@ class PasswordGeneratorApp:
             messagebox.showerror("Error", "Password length must be a number")
             return
 
-        chars = string.ascii_letters + string.digits + "@#%&()?!"
+        chars = string.ascii_letters + string.digits + '@#%&'
         password = ''.join(random.sample(chars, length))
         self.generatedpassword.set(password)
 
